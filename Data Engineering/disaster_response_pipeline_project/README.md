@@ -10,7 +10,8 @@ Your project will include a web app where an emergency worker can input a new me
 
 Below are a few screenshots of the web app.
 
-
+![ScreenShot](Example.png)
+![ScreenShot](Webapp.png)
 
 ## File structure of the Project
 

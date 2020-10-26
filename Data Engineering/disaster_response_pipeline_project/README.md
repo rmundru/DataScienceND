@@ -2,33 +2,30 @@
 
 ## Project Overview
 
-In this course, you've learned and built on your data engineering skills to expand your opportunities and potential as a data scientist. In this project, you'll apply these skills to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
+In this project, we will analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
-In the Project Workspace, you'll find a data set containing real messages that were sent during disaster events. You will be creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency.
-
-Your project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. This project will show off your software skills, including your ability to create basic data pipelines and write clean, organized code!
+The project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. 
 
 Below are a few screenshots of the web app.
 
+![ScreenShot](Example.png)
+![ScreenShot](Webapp.png)
+
 ## File structure of the Project
 
-- app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
-
-- data
-|- disaster_categories.csv  # data to process
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- InsertDatabaseName.db   # database to save clean data to
-
-- models
-|- train_classifier.py
-|- classifier.pkl  # saved model
-
-- README.md
+    .
+    ├── app     
+    │   ├── run.py                           # Flask file that runs app
+    │   └── templates   
+    │       ├── go.html                      # Classification result page of web app
+    │       └── master.html                 # Main page of web app    
+    ├── data                   
+    │   ├── disaster_categories.csv          # Dataset including all the categories  
+    │   ├── disaster_messages.csv            # Dataset including all the messages
+    │   └── process_data.py                  # Data cleaning
+    ├── models
+    │   └── train_classifier.py              # Train ML model           
+    └── README.md
 
 
 ### Instructions:
